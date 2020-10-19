@@ -1,0 +1,11 @@
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\bin\Debug\netcoreapp3.1\Lesson_3.exe
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\bin\Debug\netcoreapp3.1\Lesson_3.deps.json
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\bin\Debug\netcoreapp3.1\Lesson_3.runtimeconfig.json
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\bin\Debug\netcoreapp3.1\Lesson_3.runtimeconfig.dev.json
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\bin\Debug\netcoreapp3.1\Lesson_3.dll
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\bin\Debug\netcoreapp3.1\Lesson_3.pdb
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\obj\Debug\netcoreapp3.1\Lesson_3.csprojAssemblyReference.cache
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\obj\Debug\netcoreapp3.1\Lesson_3.AssemblyInfoInputs.cache
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\obj\Debug\netcoreapp3.1\Lesson_3.AssemblyInfo.cs
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\obj\Debug\netcoreapp3.1\Lesson_3.dll
+C:\Users\Nicolas\Desktop\Pop_2020\Lesson_3\obj\Debug\netcoreapp3.1\Lesson_3.pdb
