@@ -151,48 +151,78 @@ namespace Lesson_3
 
         static void Task5()
         {
+            bool test = true;
+            DateTime date = DateTime.Now;
+            int dateTest = date.Year - 100;
             Console.WriteLine("What is your first name ? ");
             string firstName = Convert.ToString(Console.ReadLine());
-            Console.WriteLine("What is your last  name ? ");
-            string lastName = Convert.ToString(Console.ReadLine());
-            Console.WriteLine("What is the year of your date of birth ? ");
-            int year = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("What is the month of your date of birth ? ");
-            int month = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("What is the day of your date of birth ? ");
-            int day = Convert.ToInt32(Console.ReadLine());
-            DateTime dateOfBirth = new DateTime(year, month, day);
-            Console.WriteLine("What is your student ID ? ");
-            string studentNumber = Convert.ToString(Console.ReadLine());
+            if (firstName.Length > 100)
+            {
+                Console.WriteLine("the limit is 100 char, please reload the program");
+                test = false;
+            }
+            if (test == true)
+            {
+                Console.WriteLine("What is your last  name ? ");
+                string lastName = Convert.ToString(Console.ReadLine());
+                if (lastName.Length > 100)
+                {
+                    Console.WriteLine("the limit is 100 char, please reload the program");
+                    test = false;
+                }
+                if (test == true)
+                {
+                    Console.WriteLine("What is the year of your date of birth ? ");
+                    int year = Convert.ToInt32(Console.ReadLine());
+                    if (year < dateTest)
+                    {
+                        Console.WriteLine("the limit of your year of birth is 100 years from now, please reload the program");
+                        test = false;
+                    }
+                    if (test == true)
+                    {
+                        Console.WriteLine("What is the month of your date of birth ? ");
+                        int month = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("What is the day of your date of birth ? ");
+                        int day = Convert.ToInt32(Console.ReadLine());
+                        DateTime dateOfBirth = new DateTime(year, month, day);
+                        Console.WriteLine("What is your student ID ? ");
+                        string studentNumber = Convert.ToString(Console.ReadLine());
+                        if (studentNumber.Length > 12)
+                        {
+                            Console.WriteLine("the limit of the range of your student ID is 12, please reload the program");
+                            test = false;
+                        }
+                        if (test == true)
+                        {
+                            string studentYear ="";
+                            for (int i = 0; i <= 3; i++)
+                            {
+                                studentYear += studentNumber[i];
+                            }
 
-            char[] studentYear = new char[4];
-            for (int i = 0; i <= 3; i++)
-            {
-                studentYear[i] = studentNumber[i]  ;
-            }
+                            string studentFaculty = "";
+                            for (int i = 4; i <= 5; i++)
+                            {
+                                studentFaculty += studentNumber[i];
+                            }
+                            string studentSpeciality = "";
+                            for (int i = 6; i <= 7; i++)
+                            {
+                                studentSpeciality += studentNumber[i];
+                            }
+                            string studentWithinSpeciality = "";
+                            for (int i = 8; i <= 11; i++)
+                            {
+                                studentWithinSpeciality += studentNumber[i];
+                            }
 
-            char[] studentFaculty = new char[2];
-            int compteur = 0;
-            for (int i = 4; i <= 5; i++)
-            {
-                studentFaculty[compteur] = studentNumber[i];
-                compteur++;
+                            Console.WriteLine("Your name is " + firstName + " " + lastName + ", you were born the " + dateOfBirth.Day + " of " + dateOfBirth.Month + " in " + dateOfBirth.Year);
+                            Console.WriteLine("Your ID Card was delivered on the year " + studentYear + ", your code of faculty is " + studentFaculty + ", your speciality number is " + studentSpeciality + " and your number within speciality is " + studentWithinSpeciality);
+                        }
+                    }
+                }
             }
-            compteur = 0;
-            char[] studentSpeciality = new char[2];
-            for (int i = 6; i <= 7; i++)
-            {
-                studentSpeciality[compteur] = studentNumber[i];
-            }
-            compteur = 0;
-            char[] studentWithinSpeciality = new char[4];
-            for (int i = 8; i <= 11; i++)
-            {
-                studentWithinSpeciality[compteur] = studentNumber[i];
-            }
-
-            Console.WriteLine("Your name is " + firstName + " " + lastName + ", you were born the " + dateOfBirth.Day + " of " + dateOfBirth.Month + " in " + dateOfBirth.Year);
-            Console.WriteLine("Your ID Card was delivered on the year " + studentYear + ", your code of faculty is " + studentFaculty + ", your speciality number is " + studentSpeciality + " and your number within speciality is " + studentWithinSpeciality);
         }
         static void Main(string[] args)
         {
